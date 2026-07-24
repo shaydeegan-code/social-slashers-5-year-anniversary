@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Slashers — 5 Year Anniversary Dinner Dance</title>
+<meta name="description" content="Celebrate five years of hurling, craic and community. Saturday 26th September, Ardglass Golf Club. Tickets £35.">
+<style>
+  :root{
+    --black:#0d0d0d; --black2:#161616; --black3:#1f1d18;
+    --gold:#d4af37; --gold-light:#f0d47e; --gold-dark:#a8862a;
+    --cream:#f5efe0; --grey:#b8b2a4;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--black);color:var(--cream);font-family:Georgia,'Times New Roman',serif;line-height:1.6}
+  h1,h2,h3,.label{font-family:'Trebuchet MS',Verdana,sans-serif}
+  a{color:var(--gold)}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+  .label{display:inline-block;border:1px solid var(--gold);color:var(--gold);letter-spacing:3px;font-size:12px;padding:6px 16px;text-transform:uppercase;margin-bottom:18px}
+  .btn{display:inline-block;padding:14px 34px;font-family:'Trebuchet MS',sans-serif;font-weight:bold;letter-spacing:1px;text-decoration:none;text-transform:uppercase;font-size:14px;border-radius:2px;transition:all .2s}
+  .btn-gold{background:linear-gradient(135deg,var(--gold-light),var(--gold),var(--gold-dark));color:var(--black)}
+  .btn-gold:hover{filter:brightness(1.1);transform:translateY(-2px)}
+  .btn-outline{border:2px solid var(--gold);color:var(--gold)}
+  .btn-outline:hover{background:var(--gold);color:var(--black)}
+  section{padding:80px 0}
+  .sec-title{color:var(--gold);font-size:34px;letter-spacing:1px;margin-bottom:8px}
+  .sec-sub{color:var(--grey);font-style:italic;margin-bottom:40px;font-size:18px}
+  .rule{width:70px;height:3px;background:var(--gold);margin:18px 0 28px}
+
+  /* NAV */
+  nav{position:sticky;top:0;background:rgba(13,13,13,.95);border-bottom:1px solid rgba(212,175,55,.35);z-index:50;padding:14px 0}
+  nav .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+  .logo{font-family:'Trebuchet MS',sans-serif;font-weight:bold;color:var(--gold);letter-spacing:2px;font-size:18px;text-decoration:none}
+  nav ul{display:flex;gap:22px;list-style:none;flex-wrap:wrap}
+  nav ul a{color:var(--cream);text-decoration:none;font-family:'Trebuchet MS',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase}
+  nav ul a:hover{color:var(--gold)}
+
+  /* HERO */
+  .hero{position:relative;min-height:92vh;display:flex;align-items:center;text-align:center;background:
+    linear-gradient(rgba(13,13,13,.78),rgba(13,13,13,.88)),
+    url('https://lh3.googleusercontent.com/pw/AP1GczN4BzDBlTXmveQt_mZk66tiJa-Iz4_p3mIIb3TfL0nNt5v6y7SrrVvS0ZkIYqwE6LevrsueUzTZAWMZRC8TO_5p-G0RKTTYK_2HvL6hDyqHgga9BHLcBIMBlUbO5K6wjFCKYsbeAlQHLad6HyV1WSlPMsidBjK-f0F5ThUT6aX51tUdKMfYIKqhFzVm-NLj71Bg36_1PXI5dR0tzxKlrrssYK3nHagSwOngcRrPEpDuCFh1AcLhFgK3KNvlykdUpB5brawHEpjpHs_uZFlNRtXCQIsZ3lTWCb2OEFbC0QsG1DvYJaIz-TCqchAudgza7_QGB0jJsR01GjXbiZBxjk7QeP8xAkmQnxCHyotj3lnw4rQQtxfEq9NsTNlAtoXa8hiwQBMbv2Tu2ADbufGaaUFvRlvgwmBQpWK2Ks_JPtY2VD6F92K-QJSANZgzqHkXfkoYcMK5uNaz7OLf7B7GzYAtPnYSS8MDd-_YRK-S_4ZWVfQxH48ppIvRaC9683r0zohmI9N0g-UIVcXhChA55Ym2HXcGJR9Nv7FIc_pC4h_rqmFh74_1klsor-Y3hgvP-yQa4EO8WHthfpHEmDBUqG1EME3Fltbdu4wuutdXLtigCETAmg3AJZICl6CIjhlmROrR34IZwDb0uwa6KHidZrH1jrS_TD_NMmKO1eubo2WyJSaLDlcIQtuPbTfrk0U0oH8bIthNZRk5NabyzZGEqhjE1hgvNbsqgDY0BrLZzkkr0DY4tCx1atUGE5wbh2apYloW9FRn2ZxIz0OCrGdGXuTQhkJAsbJnFkKeJ6AthpYD8RMbDknsexv54M1BWGMHdbZB325bGo0I5-tx7WSgDstrzfd5S_cCp_NZJMeeOw4xvY00PD-Hp36mLIY2ANa2oEdWccyXPzOQb6pqbzkmUYkz7DCa87m-hEWn7GUPe8Lm_UifipFLQ5ifnvBG01cWr9jYSa1cCarduUmmYg=w1920') center/cover no-repeat}
+  .hero .inner{width:100%;padding:80px 24px}
+  .hero h1{font-size:clamp(38px,7vw,72px);color:var(--gold);letter-spacing:2px;line-height:1.1;margin:10px 0}
+  .hero .tagline{font-style:italic;font-size:clamp(18px,3vw,26px);color:var(--cream);margin-bottom:8px}
+  .hero .when{font-family:'Trebuchet MS',sans-serif;color:var(--gold-light);letter-spacing:2px;font-size:clamp(14px,2.4vw,20px);margin:22px 0 34px;text-transform:uppercase}
+  .hero .ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+  /* DETAILS */
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+  .card{background:var(--black2);border:1px solid rgba(212,175,55,.3);border-top:3px solid var(--gold);padding:26px}
+  .card h3{color:var(--gold);font-size:16px;letter-spacing:1px;text-transform:uppercase;margin-bottom:10px}
+  .card p{color:var(--cream);font-size:17px}
+  .card .big{font-size:24px;font-weight:bold;color:var(--cream)}
+  .card small{color:var(--grey)}
+
+  /* PROGRAMME */
+  .prog{list-style:none;max-width:640px}
+  .prog li{display:flex;gap:18px;padding:12px 0;border-bottom:1px dotted rgba(212,175,55,.3)}
+  .prog .t{color:var(--gold);font-family:'Trebuchet MS',sans-serif;font-weight:bold;min-width:64px}
+
+  /* LIVE MUSIC */
+  .band-box{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+  @media(max-width:800px){.band-box{grid-template-columns:1fr}}
+  .band-name{font-size:clamp(30px,5vw,44px);color:var(--cream);font-family:Georgia,serif;font-weight:bold;margin:6px 0 2px}
+  .band-alt{color:var(--grey);font-style:italic;font-size:18px;margin-bottom:18px}
+  .band-links{margin-top:22px;display:flex;gap:14px;flex-wrap:wrap}
+  .band-sponsor{background:var(--black);border:1px solid rgba(212,175,55,.35);padding:30px;text-align:center}
+  .band-sponsor .kicker{font-family:'Trebuchet MS',sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--grey);margin-bottom:18px}
+  .band-sponsor .thanks{color:var(--grey);font-size:14px;font-style:italic;margin-top:18px}
+  .cm-logo{display:inline-flex;align-items:center;gap:8px;background:#232a2e;padding:14px 22px;border-radius:4px}
+  .cm-logo .cm{font-family:'Trebuchet MS',sans-serif;font-weight:bold;font-size:38px;line-height:1;letter-spacing:-2px}
+  .cm-logo .cm .c{color:#d8d8d8}.cm-logo .cm .m{color:#6abf4b}
+  .cm-logo .cm-txt{font-family:'Trebuchet MS',sans-serif;color:#f2f2f2;font-size:13px;line-height:1.25;text-align:left}
+  .cm-logo .cm-dia{position:relative;width:34px;height:30px;margin-left:6px}
+  .cm-logo .cm-dia i{position:absolute;width:19px;height:19px;transform:rotate(45deg)}
+  .cm-logo .cm-dia .w{background:#f2f2f2;right:0;bottom:0}
+  .cm-logo .cm-dia .g{background:#6abf4b;left:0;top:0}
+
+  /* STATS */
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px;margin-top:36px}
+  .stat{text-align:center;border:1px solid rgba(212,175,55,.3);padding:26px 14px;background:var(--black2)}
+  .stat .n{font-size:44px;color:var(--gold);font-family:'Trebuchet MS',sans-serif;font-weight:bold}
+  .stat .d{color:var(--grey);font-size:14px}
+  blockquote{border-left:3px solid var(--gold);padding:10px 22px;font-style:italic;font-size:19px;color:var(--cream);margin:30px 0;max-width:750px}
+  blockquote footer{font-size:14px;color:var(--grey);font-style:normal;margin-top:8px}
+
+  /* GIVING BACK */
+  .give-bars{max-width:820px;margin:40px 0 10px}
+  .gbar{display:grid;grid-template-columns:220px 1fr 90px;gap:14px;align-items:center;padding:10px 0}
+  @media(max-width:640px){.gbar{grid-template-columns:1fr;gap:4px}.gbar .gval{text-align:left}}
+  .gname{font-family:'Trebuchet MS',sans-serif;font-size:14px;letter-spacing:.5px;color:var(--cream)}
+  .gname small{display:block;color:var(--grey);font-size:12px;letter-spacing:0}
+  .gtrack{background:rgba(212,175,55,.12);border:1px solid rgba(212,175,55,.25);height:22px;border-radius:2px;overflow:hidden}
+  .gfill{height:100%;background:linear-gradient(90deg,var(--gold-dark),var(--gold),var(--gold-light));width:0;transition:width 1.2s ease}
+  .gval{font-family:'Trebuchet MS',sans-serif;font-weight:bold;color:var(--gold);text-align:right}
+  .give-note{color:var(--grey);font-size:13px;font-style:italic;margin-top:14px}
+  .deeds{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:40px}
+  .deed{background:var(--black);border:1px solid rgba(212,175,55,.3);padding:20px 22px;display:flex;gap:14px;align-items:flex-start}
+  .deed .ic{font-size:26px;line-height:1}
+  .deed h4{color:var(--gold);font-family:'Trebuchet MS',sans-serif;font-size:14px;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+  .deed p{color:var(--grey);font-size:14px;line-height:1.5}
+
+  /* GALLERY */
+  .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+  .gallery img{width:100%;height:230px;object-fit:cover;display:block;border:1px solid rgba(212,175,55,.25);filter:saturate(.95);transition:transform .25s}
+  .gallery img:hover{transform:scale(1.03)}
+
+  /* TICKETS */
+  .tickets{background:linear-gradient(160deg,var(--black3),var(--black2));border-top:1px solid rgba(212,175,55,.4);border-bottom:1px solid rgba(212,175,55,.4)}
+  .ticket-box{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+  @media(max-width:800px){.ticket-box{grid-template-columns:1fr}}
+  .price{font-size:64px;color:var(--gold);font-family:'Trebuchet MS',sans-serif;font-weight:bold}
+  .ticket-feats{list-style:none;margin:20px 0 30px}
+  .ticket-feats li{padding:7px 0 7px 30px;position:relative;color:var(--cream)}
+  .ticket-feats li::before{content:"✦";color:var(--gold);position:absolute;left:0}
+
+  /* BABY PICS */
+  .baby{background:var(--black)}
+  .baby .box{background:var(--black2);border:2px dashed var(--gold);padding:44px;text-align:center;max-width:820px;margin:0 auto}
+  .baby h2{color:var(--gold);font-size:30px;margin-bottom:14px}
+  .baby p{max-width:640px;margin:0 auto 14px}
+
+  /* SPONSORS */
+  .tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:30px}
+  .tier{background:var(--black2);border:1px solid rgba(212,175,55,.35);padding:30px;text-align:center}
+  .tier.gold{border:2px solid var(--gold);background:linear-gradient(180deg,#211d10,var(--black2))}
+  .tier h3{color:var(--gold);letter-spacing:2px;text-transform:uppercase;font-size:18px}
+  .tier ul{list-style:none;margin:18px 0 24px;color:var(--grey);font-size:15px}
+  .tier li{padding:6px 0;border-bottom:1px dotted rgba(212,175,55,.2)}
+
+  footer{border-top:1px solid rgba(212,175,55,.35);padding:40px 0;text-align:center;color:var(--grey);font-size:14px}
+  footer .socials a{margin:0 12px;font-family:'Trebuchet MS',sans-serif;letter-spacing:1px;text-decoration:none}
+  .notice{background:#2a2410;border:1px solid var(--gold);color:var(--gold-light);padding:10px 16px;font-size:13px;font-family:'Trebuchet MS',sans-serif;max-width:820px;margin:20px auto 0;text-align:center}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top">SOCIAL SLASHERS &#183; EST. 2021</a>
+    <ul>
+      <li><a href="#details">The Night</a></li>
+      <li><a href="#music">Live Music</a></li>
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#giving">Giving Back</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#tickets">Tickets</a></li>
+      <li><a href="#babypics">Baby Pics</a></li>
+      <li><a href="#sponsor">Sponsor</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="inner">
+    <span class="label">Est. 2021 &#8226; Greater Downpatrick, Co. Down</span>
+    <h1>SOCIAL SLASHERS<br>5 YEAR ANNIVERSARY</h1>
+    <p class="tagline">Five years of hurling, craic &amp; community &#8212; one night to celebrate it all.</p>
+    <p class="when">Saturday 26th September &#8226; 7:00pm &#8226; Ardglass Golf Club</p>
+    <div class="ctas">
+      <a class="btn btn-gold" href="#tickets">Buy Tickets &#8212; &pound;35</a>
+      <a class="btn btn-outline" href="#sponsor">Sponsor the Event</a>
+    </div>
+  </div>
+</header>
+
+<section id="details">
+  <div class="wrap">
+    <span class="label">The Night</span>
+    <h2 class="sec-title">A Night on the Boulevard of Broken Hurls</h2>
+    <p class="sec-sub">Join the rag-tag rabble of ex-players and brave beginners for our biggest night yet.</p>
+    <div class="cards">
+      <div class="card"><h3>When</h3><p class="big">Sat 26th September</p><p>Doors &amp; trad music from 7:00pm</p></div>
+      <div class="card"><h3>Where</h3><p class="big">Ardglass Golf Club</p><p>Castle Place, Ardglass<br><small>Taxis on standby for the end of the night</small></p></div>
+      <div class="card"><h3>Dinner</h3><p class="big">3-Course Meal</p><p>Dietary requirements collected when you book</p></div>
+      <div class="card"><h3>Dress Code</h3><p class="big">Formal</p><p>Black &amp; gold colours encouraged</p></div>
+    </div>
+
+    <h3 style="color:var(--gold);margin:50px 0 16px;font-size:20px;letter-spacing:1px;">WHAT'S IN STORE</h3>
+    <ul class="prog">
+      <li><span class="t">7:00</span><span>Arrival drinks with live trad music from <a href="#music">Clann U&iacute; hUiginn</a></span></li>
+      <li><span class="t">7:45</span><span>Welcome &amp; three-course dinner</span></li>
+      <li><span class="t">9:15</span><span>Guest speakers &amp; a look back at 5 years of the Slashers &#8212; photos, achievements and videos from the Slashers kids</span></li>
+      <li><span class="t">9:45</span><span>Games &amp; craic &#8212; the baby photo guessing game, awards and more</span></li>
+      <li><span class="t">10:30</span><span>Music &amp; DJ into the night</span></li>
+      <li><span class="t">Late</span><span>The third half &#8212; and taxis on warning</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="music" style="background:var(--black3)">
+  <div class="wrap">
+    <span class="label">Live Music</span>
+    <h2 class="sec-title">Trad Music on Arrival</h2>
+    <p class="sec-sub">Welcoming you through the doors of Ardglass Golf Club from 7:00pm.</p>
+    <div class="band-box">
+      <div>
+        <div class="band-name">Clann U&iacute; hUiginn</div>
+        <div class="band-alt">The Higgins Clann &#8212; Irish traditional music</div>
+        <p>We're delighted to have <b>Clann U&iacute; hUiginn</b> playing live as you arrive &#8212; the perfect trad soundtrack to your welcome drinks before dinner. Fiddle, concertina, guitar and song from one of the area's favourite family trad groups.</p>
+        <div class="band-links">
+          <a class="btn btn-outline" href="https://www.instagram.com/higginsclannmusic/" target="_blank" rel="noopener">Instagram</a>
+          <a class="btn btn-outline" href="https://www.facebook.com/HigginsClannMusic/" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+      <div class="band-sponsor">
+        <div class="kicker">Music Proudly Sponsored By</div>
+        <a class="cm-logo" href="https://cmprecision.co.uk/" target="_blank" rel="noopener" title="CM Precision Components">
+          <span class="cm"><span class="c">c</span><span class="m">m</span></span>
+          <span class="cm-txt">precision<br>components</span>
+          <span class="cm-dia"><i class="w"></i><i class="g"></i></span>
+        </a>
+        <p class="thanks">A huge thank-you to <b>CM Precision Components</b>, Downpatrick, for sponsoring Clann U&iacute; hUiginn's performance on the night.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="story" style="background:var(--black2)">
+  <div class="wrap">
+    <span class="label">Our Story</span>
+    <h2 class="sec-title">Five Years of Hurling, Craic &amp; Community</h2>
+    <div class="rule"></div>
+    <p style="max-width:820px">The Social Slashers were founded in 2021 with a simple but powerful mission: to reduce social isolation in rural areas amongst the 35+ age group. What began as a weekly puck-around for a handful of ex-players and total beginners has grown into a warm, welcoming social hurling and camogie group open to absolutely everyone &#8212; now a registered charity with an elected committee, an official O'Neills team shop, and friends right across the Lecale peninsula.</p>
+    <blockquote>
+      "A rag-tag rabble of ex-players and brave beginners walking down the boulevard of broken hurls together."
+      <footer>&#8212; The Slashers, as featured on OTB / Bord G&aacute;is Energy and TG4</footer>
+    </blockquote>
+    <div class="stats">
+      <div class="stat"><div class="n">5</div><div class="d">Years &amp; counting</div></div>
+      <div class="stat"><div class="n">~1K</div><div class="d">Followers across Facebook &amp; Instagram</div></div>
+      <div class="stat"><div class="n">140+</div><div class="d">Posts, tours &amp; fundraisers shared</div></div>
+      <div class="stat"><div class="n">&pound;5</div><div class="d">A session &#8212; all welcome, always</div></div>
+    </div>
+    <p style="margin-top:36px;max-width:820px;color:var(--grey)">Along the way we've toured the clubs of Lecale, run the Social Dashers 5K for Downpatrick Autism Support, raised funds for mental health and the Kilclief Storm Relief Fund, put a defibrillator pitch-side, and proved &#8212; thanks to Gary taking up hurling at 70 &#8212; that it's never too late to pick up a hurl.</p>
+  </div>
+</section>
+
+<section id="giving">
+  <div class="wrap">
+    <span class="label">Giving Back</span>
+    <h2 class="sec-title">More Than a Hurling Club</h2>
+    <p class="sec-sub">Every &pound;5 session, sponsor and fundraiser has helped us give back to the community that's given us so much.</p>
+
+    <div class="stats">
+      <div class="stat"><div class="n">&pound;5K+</div><div class="d">Given to charities, clubs &amp; schools</div></div>
+      <div class="stat"><div class="n">4</div><div class="d">Charities supported</div></div>
+      <div class="stat"><div class="n">3</div><div class="d">Christmas foodbank appeals in a row</div></div>
+      <div class="stat"><div class="n">7+</div><div class="d">Local clubs &amp; schools sponsored</div></div>
+    </div>
+
+    <h3 style="color:var(--gold);margin:50px 0 6px;font-size:20px;letter-spacing:1px;">WHERE THE MONEY WENT</h3>
+    <div class="give-bars">
+      <div class="gbar"><div class="gname">Downpatrick Foodbank<small>Three Christmas appeals, 2023&#8211;2025</small></div><div class="gtrack"><div class="gfill" data-w="100%"></div></div><div class="gval">&pound;1,611</div></div>
+      <div class="gbar"><div class="gname">Downpatrick Autism Support<small>Proceeds of the Social Dashers 5K</small></div><div class="gtrack"><div class="gfill" data-w="98%"></div></div><div class="gval">&pound;1,585</div></div>
+      <div class="gbar"><div class="gname">Local clubs &amp; schools<small>Match balls, hurls &amp; championship sponsorship</small></div><div class="gtrack"><div class="gfill" data-w="50%"></div></div><div class="gval">&pound;808</div></div>
+      <div class="gbar"><div class="gname">MYMY Mental Health<small>Raised at the Ardglass Blitz</small></div><div class="gtrack"><div class="gfill" data-w="31%"></div></div><div class="gval">&pound;500</div></div>
+      <div class="gbar"><div class="gname">Kilclief Storm Relief Fund<small>When the community needed it most</small></div><div class="gtrack"><div class="gfill" data-w="31%"></div></div><div class="gval">&pound;500</div></div>
+    </div>
+    <p class="give-note">Figures from the club accounts, 2023&#8211;2025 &#8212; over &pound;5,004 given back in total.</p>
+
+    <div class="deeds">
+      <div class="deed"><span class="ic">&#10084;&#65039;</span><div><h4>Defibrillator Pitch-Side</h4><p>Bought a portable Heartstart FRX defibrillator and funded public training courses for cardiac emergencies.</p></div></div>
+      <div class="deed"><span class="ic">&#129658;</span><div><h4>Health Screenings</h4><p>Organised health checks for 13 at-risk men, plus weekly HIIT and circuit classes in Saul.</p></div></div>
+      <div class="deed"><span class="ic">&#127757;</span><div><h4>Gear to Uganda</h4><p>Shipped hurling gear to youth outreach programmes in Uganda &#8212; and donated equipment to local schools.</p></div></div>
+      <div class="deed"><span class="ic">&#129521;</span><div><h4>Ball Wall in Saul</h4><p>Funded a dedicated ball wall so anyone can puck about, any time.</p></div></div>
+      <div class="deed"><span class="ic">&#127945;</span><div><h4>Free Loan Equipment</h4><p>Hurls, helmets and sliotars provided free &#8212; removing every barrier to picking up the game.</p></div></div>
+      <div class="deed"><span class="ic">&#127942;</span><div><h4>Blitzes Home &amp; Away</h4><p>Hosted the Slashers Blitz and co-hosted the Kilclief Blitz; travelled to Belfast, Derry, Lisburn &amp; Dublin.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <span class="label">Gallery</span>
+    <h2 class="sec-title">Five Years in Pictures</h2>
+    <p class="sec-sub">A few moments from along the way.</p>
+    <div class="gallery">
+      <img alt="Social Slashers memory" loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczMRz44Bdd0m7hfkG2dBQSJTBiejHpm3nJnYZMVCjeJkmQAro-fSlLbU9kmIbyt1r7_fXo_qtSjw43b5G1MGle86Dcffj48jPQgf8RgOghQEGgJi5fhWBtORYojDlLEPtCzVATyo4PcBuu2hDkkZFT7W1O-uAxa1XOB7ysfn--IwFQ0QkJo2pzHZs11nUwbYtzFqz4WOFcHDekgkXFeOERKZulrzdXMCZQbQpAtvwP8BSyoaxAqQwWShtXMyRcW5qWekbXuxcop7PvhPZAry_b7xxY9599btFBxLE22LPVCG9aGf5K7Srf9VL1wepqTL4hZ7dFUEOzbfr92fIjNE_s2C7D1kwyr_oI6eqWMwX8cuNs2bTvYNIAN4moXGgVzVhrBxVheGyy_Vw31gMtDOyYEN95sVY5FIrBQdb3U-EhShxt5ag-Wx4ORcUBqFfqc6rGfPjWzbDDMLG-ZIyivhxFgml3C8fIIBwa3Q6lpKDhtsH5GZQByWyAjmngtIDCWPoc4SX5EdF6lKZeafGJXopq3z_sm_E7ZHnH16qVoztJlHOKRe8KFuf-UIQAn7sTMuObuXRfNJN1yGCMgvNiKwQMxIF6xzfMNTD3av75UteiTlW3-rF3GB3BIFq-vrn7I9Jbmr6_fZQK_aLtLrTepMEfZbh2j8ysacGpCqR9GCdfnV_QsmQy708UtIAm2HdPZthbY-PoM_QTpu4nYC2aAAkfk25ywTRZ5iT8EFOhZKaLvkQ-IRsdijdB1O3vLWNjcQ-dSodV43vNrjPdaA2KY2YMVjT4_ymLVpbtjTb0zobUHcDcGgCW51n7QpNzSwCW_cD483nZzjkB5ZsYEZei1sWROBptClm37qL1dNXYuArElddygFFhx7DHf3fm3L4x2hOoSvTRyKC59uoGiTYNkFtb3rbXik3Qi8BBB7V1tji4ImxskCOf_oa0MdCGDoVyLlzElOfYEnE_j7OY5LGA=w800">
+      <img alt="Social Slashers memory" loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczMgz3UixLYprO3akRB32mNeuBHVgqasVfiZVFY3Ov6IYS4TZ_KzpIIhbcgS95nIOjlca9btUhFl0mYa_42lNdjUdAo4aEc3FojgKzAlnuEnNoxVhvd0GyWEWUPl2e2Oorlzy5donpvrT6eDfloL_hy7bQ6xBuUoWaQQ0dYVFGiIoYKGBR-GQE2ypZ879kYUb5GHE0Vt5st3_XE6htQW159GnLt4t1114b4ZN3n5CcfOf3FIPUom7tatlYLooqH_7RESS-drhK3SYPD1vcgH8UK6__bGSvr7ROh2S9ymScZWzM-FaQ-m-ufSs-vmGW3gt8IXPYW5yGJl-inhwRs_CZw9FPAE8qfkRQiFOZSdRNq26IpAktNWWsiN3k_lkyUwFh68aVmR_XcZK_NwKz_DNSeqVWbpBbQRip4D6QwJ-lxh8XfOa45GVSdu9HjX9pWfNoiulXl2T5h8hxqKMI7QvpqAhD4QJiynOUQxbTbvjvaIY_HoIG5UPECOSzdo-W4AjQpeSEInk5QUfXZdtiSinxzKGvc3l25vyFtxbZFRajZyWZANmUGx6pFPSOhLywHPzgS_9RzFKaCNFj4zHeynPKbUbSLlWxiUzlSa1lzTfakqSI6QodtRpRlwd7OOdhlV1rycaEmPFpHWZlYm0WT_ldi-OpU8-_2Xt_V0h2sGIG7IoYfKUbtVTonT8DIYam9IMn6GRYDEINl3R3STJ5sm-KZEilXlkmPio_V-6S4xBEE9Ax8Bw1g7r-as_cvm4g0GA11TwXyhcu6w8NdslSt1kQU19RRw-5h_COGWgiP5ff1Q4f-e7RRvB8asHAlmFgrpq6Z_exngeAaW_aa65Ub22GVsP2HCF5yPpPj3KCcFVOKbKXeeZn_9KWrFzVw7o9BBtXC6tiTDkyw3BHkSFAybfPb0YI3gaiiZvPdG0dyHp4I5hF4zYTEc1dLkJn01gkhjcwLfIkV2bder4tdG=w800">
+      <img alt="Social Slashers memory" loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczOsXiGPmtYQaEfObqNMjRxtODRXBTwpnol7Rs-qR80CD84ktPsOQGwcPK7TGyQy3LsA815zQtDcHuR9ONrsIF1v7AimUOSEOs_8wRoAG9bsh9qMw_PhhmuHzrnY_UUWoclXcIjYm6DD0fcqhgAzqKrC_BCA9vY6Sop55s-f3F7DvHTdy-bxXMKhayT2JLuCdOWFTu8L35rXcSWqFduY4Wu7QtYdtIlHyuLFNVfnUXX4lqbL5bme2wP6koz4An57Y04Eh9uE87hiQgt6-TYQUN3BfGC3UphoLd_i7ISUMIRyzSMJHzfThqrZPgohPSR-fgTex7YP_gXJc1MJqfogf2CnsNPTO3htqIKYJEFc7AFUKDBTasKaFDaArNGiVJ48RK_PobGlVVpPqwsMEjJCUIsUog44PX90y4CpiVIOyJwkwflajopAw39zTIA8TxnvMwGgPUCNorETY7UY0y74hliTA8sPziQe1OIxyuX-Cm25M461K28CwRYoPs0tejV6si2F8oMEiVzwRWCi5kwKtnQN-JA0qSPZIqGFbLFNYAZeNiJGeRmCGE-K0SVibrj3jnLFaiJyKe_XgB7PDse8vk3Eh18jg-awfg8kB_f2IXD1rbRdxDncfFCOoQOklhAK9snKYGYxDICFo1L6mc4ridRYIHC_ZX-lYLVOx_uUYdp9eYmvUqEOWJTaHNVQ3FBiZ6eaYjETTIoa-ArUTvJ9WAi5oqR8d38s47CIxL9Hrv-iOIJgn7MDpu1IXZzRpm-txRg5rY6ahYfkefmTW8ZP5IloSQTEzlUgVcWLkYAtvHz-ZhSHpFEHkX9AtIQ_G-9uAPk-vSSmjsvrhc4dqbUr3uopVCiK91HTspkBb1E4fwLrPy97r_4_13bjwtZbLTC3zKiL3HB9A7QL41wixjAvcQ5RnWGM2wR5AhJAA2xBy-sU0BqWf6gs0iSySTfrBrc8jrtB4uJZuKE1kUNJ=w800">
+      <img alt="Social Slashers memory" loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczN5wYYT8va4iowAwP60slSax2tSOxFYfgT9Cn0PcRGt6Zz11cwVuQljXa3T4idWFYQkmUnG_8Qk5TFqFkdAbaQGahW-97mjDXFox4B2TJPJQg50FmqpL5Quee6nUKZiB_Z-FUbHR4POwbFcdmJ1SOPujIe4SFPhaGdRlY5XygVVA5K37_ff5-1k0PeOQF77CjKmf1pHthTz9GWnEL7vjIlrkDKRuHvUuqCv4lt6h40KYTp7u5U8_6yBYJ_2GTWC8iX30tZBJ_fPqzvpW9bz9kwgiRYMLEj9MTdcRlMC6ro0LX9irVRMr5psK7WDf0djsdhEM7WiJf5oe3T8_jG44QlTPE8eS5SrpYST0Q1xqTGdiU0kw6k2fLMFSpS9c6IJ63G8UE1ZzgDyMq0KUwF6q1p7S-5Wu_2Tyx3PSS6MagnJbTZK5MJ4gCu69pI37vc728xYbKB9EgDryndAkWCe_wTw4ySVdZ_wSjErhAKbmlBSZAqgsvFOv0L9BYKVFGCzPAslHWrK1j_dqzFa1v4Ldokvs6hk8iMofZariDQFqJgQsWjL_0oietsnRIGj9ch-4J0UdhkJwZ-4NA3LIcBH35zKtt4guE00PaE5wyoAq6Ux9qLKC_ZiJr0iuIyO9D8VL24G39PxGspcHfEtNP0yl-Adl97OVJcgTnz6crhUnDhE7H4GvAH2ds5Ra_E09KSlivyfuytPoCm0vIAebjFB9w5LjoOirmIE1oGPgsaSu9cz74-PgZ39jP1d1LARnMZYQCEbXheFHccmHfUVdEfUr418tbA5hbn6K7werebLii3HKP_2yxue2BL7ggg1f53FqLlIFn4zWU53JmCFhr4BStl6xUqySpNjY-EkYz6GKbc8HATwbfQ5mkqpjmbzfC7yt645-14BKN030PhWwui8VSG2tWeK_B2nHa--2cfMuj76SuhWJ6PINqZiEbmXbAdckc1Dz0kfL_twIQm2wQ=w800">
+      <img alt="Social Slashers memory" loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczMSBdN6pn239wrtGY4a8IJP1iCof7Hr_oEutqDl9ZW2DOkB8NBXGtqUxtiq6z2jYyQ9lLPvQprhNkgfTcZCA-2rOnsxv4zQB87U7x3Rf3PzfYwKEZNCWlHqu7vk6F-vE7Shlii-iSDJ1BN3yoPj1f9Q6SgGWlnmWV6a0tLe2-CmowODHmMl0lPfA5uBn8GG5T3_-WpPae4ixb_Xy9MuIyuz99gzrNcXI2JQfSmTdLcvOIYo-PSRTT8hsYdAH5CMu9Z0zmSTWrFBvwIiY110_tcbotXiMcRtO3lv4P6Uz2G8ApRH49Diq7WI-u6-Iy87kdVB9eEDVuWPZYHX7bHalScMBaK-3fPkRd7GNtHLYqk68eVGCS1BQoI5y9Idda59fPDyheQuSQ5DlpNsWJQYjDM3PEgLezjAxuaaHkKvAaGJV6SC4rWFx1pvYlbSJq-r6R9-QYa4d6KX6eZTaDsjdWDpGKWFQbTJ5qiVr1iqPZv2beopXs38onWwLM5tCAjlOeEzZi6l_pUhIEsbucEU8YN9KggXbGiZuWF8R-D7iutwyA1yUn_7jyc0Ke9oCEvqohpaUhnkOMxhfG2m_JBs8bt8MkPGI1hvflXBa0iIdS8JUQ6sqYkZdlNSj4-RpuuPsLDpTLinnbKEB6HZixMKMl4Tghi0hrynl-kcra2TwuH8xqOjO5Dh_YSKSm8SySO5I9cLS8uGaeLLpQ-6Mg7azLmFAEarBAbuTRiNZcdBni6LvosJikghw1KCDuhyvMVuhTLCHyNHdGCz9gli9zEuS7tgMeenttfWw8UdTOkUx-Fhphj9d4-z5lmiWskmRkXL8tKSsBeMkTtjOE_azIGVvQWL4G_QKn9R30a6Du9fqknWKISJFDwPo6D-QdJddmNuKipqSbbcOQ4fbmXdgc_jB2jq5TZIesPAV-HaSaFdLZ77yycMJJElF0mui7M_YvOFuvDXoX8gNjeirx4wqQ=w800">
+      <img alt="Social Slashers memory" loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczM2YJWXaRKbFOXhukl6oePouR1XIDcdzbr-y0q02arH5c7EyuTzz8Jn7UAGKuuy2zCV4muc3oTwHsNk5TQW3ImopN_ow2xtp0DENb9FbY3srPIIKdDX4TscQVD-uM1uUXDQnGrg3n22KsGSsokMujrdeEJ7LQt-A7-UeEA0tjHqNHu0CaJHTXUE6UPr0pIZ9oA0SnC-ZnGNXlD69zqn0FE5GsPAQWJ6JMl2M7HXLMj-IRM7gOPaAcgfAu68TKqlec5n8JevFBStVjoBfJv3iEV8wz9-7A9XGOiDZ1lQAS16eU6uSrkYxvIsyxBLtuKlZG4ZEtfV8zHE7_Emptcn2eeIJ-WO0Rsfbx1NBpKsgJK_9RVlhpEtjoTGJrOUSpCE0-s5ZMh7YetCy0QTCO-zFyFX4i1OVt5eyTwskhz5b-jW_MtyKiYsFV8xpYfGQrBr_FfGAf12Gb_qips_ezJDX8J12H3GKSRmb79c6NjI67hHb6GNSqr6KPFF_vX1d8qTetY2xcXfAloNdkkrUkKdOR-DZyXM2AAEkoySs2wXjOCsMET2mrwzDqbJWMXcESBSQNEsSOkBj1H1tlFpYzE8qxInBAO1St2DaElBj7dn8KhVA4Q_-CcJWhyLfZX-IhTNB6H1X3xCfHUEslCidqaXVMrrTD6e_HrIwazJh2u6wqhB0dQMV_APiov5pcPrgkYhz6JhmBEXvjE5QbBIQOkldpbUG12J542PbLdJ3-0jiqGt-30lcah7O4xNV6Su_rceNpvb5kwtsfJHg0DrciCuv1Txjvui8N610IiSAOBW8sEepDc2_LOgndxb_YuBH4_8GdM7yWpOD0kq-S1cVcHDpfl5W68vWA-1Q0mMtrTk5DfK7zPNCNMHIrDXzvN4vrMx7kv7GbIu8puzTiIQ5mFP8XfVjMCjC9U8iJ7CIQ9-6tm0Ar16vxMoP0tQ7WGLu0RaG9_VX7jXPmEnXqdP=w800">
+      <img alt="Social Slashers memory" loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczPKajqjJViP-Tt-QOsui0zEnyVNzoS9Z1Mfit7a5BC8Nseqmk69i674lg72ONSdWjXi4rkrVLL_bKN2Pvdeo-KRNWrTyiCx1ZKnsixjdF4b-UeX0sY2_twQXQodO00FM8loRCXvv0N5q5PtXKeUl-f3UPeIikXJNQz1la_B8Tt-js_Oh2TlEItaKNeUdHyOYWHb_oxv8Sta1cwTFTfog6U2BV_nW87f35u906RHD5_DURvdnXvOmOaLWP-Qs5alC9RxCjI6bTptjqEwoEdaW7rolhX2jwJlNIxSkMOCD7R5RQuEIJeJrjI1zSWtfluLCdcWuuTTBiG120FUpTKR96PkxZZrErcSk5o-fh1NXaWR8fmKIIDegxx75alArHR6TyF6kdX1x7M4xG7juY83Oc2FBoyBxcBwpayWBowERJuGYPwBiRtvq6j_1Psp-tW80ATlpqH4hAFWYd9ekIGR2feT0YQUCYL9hX677jGHFm8w-mJUrtX8ozX030_ouuiB0ZJ-aWTKaSnf7HE7pTZvm3MEX0eOZQDr3R_YpTGRNAKu-pqnPj1yvGIgGVFWL1LC2LDWVeDmrWARk1vs4GA7CquFfe6djI0oqHb-KCPZBjv3gvCFKbEYEnL_c70B2TYQFlvpU25T3oCSELGXrNlKNN65wnT42Xm6rV2fLELKu_EojYeiZ4F6Xz8LfDXWxMlfHD3dGzxnJKbt19_eoNe1NI5Wc0zrRfqHdkPl39oglf4HKOxQgW590N2WEir7qgNIIBijKDTC-VeXriVzHz09IbwBF2xGmeE17PMer1KaDepAi7lU1nHHGuoMue1c9qW1WBnFobuoWdLvKgkCH2j-N07UdiH5fQ8T_4ghiE7Oq1n2bnWsJjuyTryKRfWT0ildwoZgGtNaSTyrxERB6ZzFLIqg445_df2eC0tF9dI3KbbU5pX1nODPfdRwmMiEZOEe74qeUDIFNvwslXNqEw=w800">
+      <img alt="Social Slashers memory" loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczN2HBi1pvE94X-5v_GVsDWIldbNelsFTZMJNPmII2JirfmjFEs3SXFt851iSTjcSwCsNNOjmcxiUdUiGlSGRsmP5uFxAzhoXg_A9kxY34VvVrSfduvM0HA0_yyvB-1nKgQrsotitpxS63RdwSNnac4CMZDLnJXT_aWgr9NFlUkDhlFJuxrim05mld7fgbiBRdjsHFCiBLta_Q1cbXNS_Wj_UXSCBZ9zKwt3CoQcI8UJ97KFHdy2yomAkg2iEPn3Is-cLaUA-RMivw7EQyjh6itJVAomvvx0b9qg43hfbbBLTh0uKEk5jdWhGHoF_M5dwNeO3-Hj175zX7BRDqFIu8hgzoXOImukmLXi8aCYZn4BkIF1OBeo0Z_vkBHv0BJbK0SsX4NdbSoVxeKLwMVbPWNXMW7fj1HBEJjY7ydf9nWIJHiL6naXK3RXxIeDolRnTNA8qHPwDiXUReYZz6iCq8pImeSVkPWC9Nr9u-SJDB7VIlPuC87dVIcDm9FuvPMRO_V_cyj7mI5arJZ2JN-84JxmU8pLKqLR4VfrDDF8jR_NJSC1YP2o6ArWddU73huTUkfdxdCxcQeFw4KynVuWFbTMV1Mr7XaXY87ON0TbCSjAbZdCgqYLqivDQ-CGhGNbfVAZls0_rnQhOBwaNtBY5hlk21l8dy8ZZXj3s81lijEFzQVbTI_o91WxxTV4DGTImFbewBK6s6In_vRntOY-VfVwiJw3jNI71mJECYVkQgiSsM7FRnQkjLiKXKIvl054awU3cNhjEJKkmlRXIkjMDavbcqGWdhiFDyf55aw9uwC2TL4NxGbjMJg2KSj6ownLWkUNRLT2oWHHuMtR7N24ArNF13oa4kS-JFNbJkOs1Lw_yf9dNpAPGWyZrfxgWC7vpfYAkZ96PGdJYnd5zMMC4t1PMhMVIN19AHXE84We-k--YQB5UtjtdY_iAbAGeLrpx8Sya_p10gPv-Ii6yA=w800">
+    </div>
+    <p style="margin-top:18px"><a href="https://photos.app.goo.gl/KnedmF13RBDpmfS19" target="_blank" rel="noopener">See the full album on Google Photos &rarr;</a></p>
+  </div>
+</section>
+
+<section id="tickets" class="tickets">
+  <div class="wrap">
+    <div class="ticket-box">
+      <div>
+        <span class="label">Tickets</span>
+        <h2 class="sec-title">Get Your Tickets</h2>
+        <div class="price">&pound;35 <span style="font-size:20px;color:var(--grey)">per person</span></div>
+        <p style="color:var(--grey);margin-top:6px">Includes your 3-course meal and a night of entertainment. Tickets are sold securely through Zeffy.</p>
+      </div>
+      <div>
+        <ul class="ticket-feats">
+          <li>Pay online securely at the ticket price</li>
+          <li>Digital ticket with QR code emailed to you automatically</li>
+          <li>Quick check-in at the door on the night</li>
+          <li>Tell us your dietary requirements &amp; seating requests when booking</li>
+          <li>Option to add a donation to support the Slashers' charity work</li>
+        </ul>
+        <a class="btn btn-gold" id="buyBtn" href="#" target="_blank" rel="noopener">Buy Tickets Now</a>
+        <div class="notice" id="zeffyNotice">&#9888; Ticket sales open soon &#8212; the Zeffy booking link will be added here.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="babypics" class="baby">
+  <div class="wrap">
+    <div class="box">
+      <span class="label">We Need You</span>
+      <h2>&#128118; Baby Pictures &amp; Fun Facts Wanted!</h2>
+      <p>One of the big games on the night is <b>"Guess the Slasher"</b> &#8212; we'll put baby photos of our players up on the big screen and let the room vote on who's who.</p>
+      <p>Dig out a <b>baby or childhood photo</b> of your favourite Slasher (or yourself!) and send it in. And if your Slasher has an <b>interesting fact</b> about them &#8212; a hidden talent, a claim to fame, a story they'd rather forget &#8212; we want that too.</p>
+      <p style="color:var(--grey);font-size:14px">Photos will only be used on the night, and the person's name will be kept secret until the big reveal. Deadline: <b>Friday 11th September</b>.</p>
+      <a class="btn btn-gold" id="submitBtn" href="#" style="margin-top:16px">Send a Photo &amp; Fact</a>
+      <div class="notice" id="emailNotice">&#9888; Submission email to be confirmed &#8212; update the address at the top of this file.</div>
+    </div>
+  </div>
+</section>
+
+<section id="sponsor" style="background:var(--black2)">
+  <div class="wrap">
+    <span class="label">Support Us</span>
+    <h2 class="sec-title">Sponsor the Event</h2>
+    <p class="sec-sub">The Social Slashers are a registered charity &#8212; sponsorship helps us keep sessions at &pound;5, donate hurling equipment to local schools and give back to the community that's given us so much.</p>
+    <div class="tiers">
+      <div class="tier gold">
+        <h3>&#11088; Gold Sponsor</h3>
+        <ul>
+          <li>Headline billing on the night</li>
+          <li>Logo on the big screen, table menus &amp; this page</li>
+          <li>Thank-you during the speeches</li>
+          <li>Shout-outs on Facebook &amp; Instagram (~1K followers)</li>
+        </ul>
+        <a class="btn btn-outline sponsor-mail" href="#">Become a Gold Sponsor</a>
+      </div>
+      <div class="tier">
+        <h3>Table Sponsor</h3>
+        <ul>
+          <li>Your business name on a table for the night</li>
+          <li>Mention in the event programme</li>
+          <li>Social media thank-you</li>
+        </ul>
+        <a class="btn btn-outline sponsor-mail" href="#">Sponsor a Table</a>
+      </div>
+      <div class="tier">
+        <h3>Raffle Prize Donor</h3>
+        <ul>
+          <li>Donate a prize for the charity raffle</li>
+          <li>Thank-you from the MC on the night</li>
+          <li>Every prize helps the fundraising total</li>
+        </ul>
+        <a class="btn btn-outline sponsor-mail" href="#">Donate a Prize</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p style="color:var(--gold);font-family:'Trebuchet MS',sans-serif;letter-spacing:2px;margin-bottom:10px">SOCIAL SLASHERS &#8226; EST. 2021 &#8226; GREATER DOWNPATRICK</p>
+    <p class="socials">
+      <a href="https://www.facebook.com/socialslashers/" target="_blank" rel="noopener">FACEBOOK</a> |
+      <a href="https://www.instagram.com/socialslashers/" target="_blank" rel="noopener">INSTAGRAM</a> |
+      <a href="https://www.oneills.com/uk_en/shop-by-team/gaa/ireland/the-social-slashers.html" target="_blank" rel="noopener">TEAM SHOP</a>
+    </p>
+    <p style="margin-top:14px">A registered charity &#8212; five years of hurling, camogie, craic and community. Here's to the next five. &#127945;</p>
+  </div>
+</footer>
+
+<script>
+  /* ============ EDIT THESE TWO LINES ============ */
+  const ZEFFY_TICKET_URL = "https://www.zeffy.com/en-GB/ticketing/5-year-anniversary-dinner-event";   // paste your Zeffy ticket form link here, e.g. "https://www.zeffy.com/ticketing/..."
+  const CONTACT_EMAIL    = "socialslashers@gmail.com";   // used for baby pics & sponsorship
+  /* ============================================== */
+
+  const buy = document.getElementById('buyBtn');
+  if (ZEFFY_TICKET_URL) {
+    buy.href = ZEFFY_TICKET_URL;
+    document.getElementById('zeffyNotice').style.display = 'none';
+  } else {
+    buy.addEventListener('click', e => { e.preventDefault(); alert('Ticket sales are opening soon — check back shortly!'); });
+  }
+
+  const submitBtn = document.getElementById('submitBtn');
+  if (CONTACT_EMAIL) {
+    submitBtn.href = 'mailto:' + CONTACT_EMAIL + '?subject=' + encodeURIComponent('Baby Photo & Fun Fact — [player name]') + '&body=' + encodeURIComponent('Who is the Slasher?\n\nInteresting fact about them:\n\n(Attach the baby photo to this email — thanks!)');
+    document.getElementById('emailNotice').style.display = 'none';
+  } else {
+    submitBtn.addEventListener('click', e => { e.preventDefault(); alert('Submission details coming soon — keep that baby photo handy!'); });
+  }
+
+  /* Animate the Giving Back bars when they scroll into view */
+  const bars = document.querySelectorAll('.gfill');
+  const grow = () => bars.forEach(b => { b.style.width = b.dataset.w; });
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(es => { if (es.some(e => e.isIntersecting)) { grow(); io.disconnect(); } });
+    const giving = document.getElementById('giving');
+    if (giving) io.observe(giving); else grow();
+  } else { grow(); }
+
+  document.querySelectorAll('.sponsor-mail').forEach(a => {
+    if (CONTACT_EMAIL) {
+      a.href = 'mailto:' + CONTACT_EMAIL + '?subject=' + encodeURIComponent('Sponsoring the Slashers 5 Year Anniversary');
+    } else {
+      a.addEventListener('click', e => { e.preventDefault(); alert('Sponsorship contact details coming soon!'); });
+    }
+  });
+</script>
+</body>
+</html>
